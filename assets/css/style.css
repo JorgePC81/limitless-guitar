@@ -17,39 +17,44 @@ h1, h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
+    font-style: oblique;
 }
 #logo {
     float:left;
-    font-size:280%;
-    margin-left: 30px;
+    font-size:300%;
+    margin-left: 35px;
+    font-style: oblique;
 }
 /*Navigation links*/
 
-#menu {
-font-size: 110%;
-letter-spacing: 4px;
+.menu {
+font-size: 100%;
+letter-spacing: 5px;
 }
-#menu, logo {
-    line-height: 75px;
+.menu, logo {
+    line-height: 80px;
 }
-#menu, li {
+.menu, li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
 }
-#menu a {
+.menu a {
     text-decoration: none;
     color:inherit;
 }
-#menu a:hover {
+.menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+.menu div:hover {
     border-bottom: 1px solid #3a3a3a;
 }
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
-/* Hero Image*/
+/*Image*/
 
-#hero-outer {
+#guitar-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
@@ -61,10 +66,10 @@ letter-spacing: 4px;
     
     }
 }
-#hero-image {
+#guitar-image {
     height: 600px;
     width: 100%;
-    background: url('../images/hero-image.webp') no-repeat center center;
+    background: url('../images/pexels-tomaz-barcellos-2021348.jpg') no-repeat center center;
 /*animates effects on loading page */
 animation-name: hero-zoom;
 animation-duration: 5s;
@@ -99,8 +104,8 @@ animation-fill-mode: forwards;
     position:absolute;
 }
 
-/* Club ethos */
-#club-ethos {
+/* Guitar examples JPC */
+#club-limitless {
     height:600px;
 }
 #left-about {
@@ -116,7 +121,7 @@ animation-fill-mode: forwards;
 }
 #center-about {
     padding-top: 30px;
-    width:33%;
+    width:35%;
     margin:0 auto;
 }
 .left-about-heading {
@@ -156,16 +161,18 @@ hr {
     border-style: solid;
     border-color: #ccc;
     border-width: 1px;
-    border-radius:50%;
+    border-radius: 100%;
     margin: 0 auto;
 }
 #circle-cover-bg {
-    background: url('../images/ethos-center-image.jpeg')no-repeat center center;
+    background: url('../images/pexels-eduardo-dutra-1822503.jpg') center center;
     height:100%;
+    width: 100%;
     border-radius:50%;
+    opacity: unset;
 }
-/* event times */
-#times {
+/* photo whole stage */
+#routine {
     background-image: url('../images/dublin-city.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,7 +180,7 @@ hr {
     width: 100%;
     overflow: hidden;
 }
-#times div {
+#routine div {
     color:#fafafa;
     background-color:rgba(0, 0, 0, .6);
     width:20%;
@@ -185,7 +192,7 @@ hr {
     box-sizing:border-box;
 
 }
-#times h2 {
+#routine h2 {
     color:#fafafa;
 }
 
@@ -206,7 +213,7 @@ footer {
     padding:5%;
     color:#3a3a3a;
 }
-/* Gallery*/
+/* Exercises*/
 
 #photos {
     clear:both;
@@ -252,7 +259,7 @@ hr {
 }
 /* For medium size 950 px down*/
 @media screen and (max-width: 950px) {
-    #menu {
+    .menu {
         clear:left;
         float:left;
         margin-left: 30px;
