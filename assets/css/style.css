@@ -155,8 +155,8 @@ hr {
     font-size: 280%;
 }
 #circle-container {
-    width:300px;
-    height:300px;
+    width:1200px;
+    height:600px;
     padding:30px;
     border-style: solid;
     border-color: #ccc;
@@ -165,12 +165,18 @@ hr {
     margin: 0 auto;
 }
 #circle-cover-bg {
-    background: url('../images/pexels-eduardo-dutra-1822503.jpg') center center;
-    height:100%;
-    width: 100%;
+    background: url('../images/pexels-brett-sayles-1205062.jpg');
     border-radius:50%;
     opacity: unset;
-}
+    width: 1200px;
+    height:600px;
+    background-size:cover; /* or "contain" depending on what you want */
+    background-position:center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:auto;
+    padding:0;
+      }
 /* photo whole stage */
 #routine {
     background-image: url('../images/dublin-city.webp');
