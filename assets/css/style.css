@@ -76,7 +76,7 @@ animation-duration: 5s;
 animation-fill-mode: forwards;
 }
 /*Create the zoom for the image on header*/
-@keyframes hero-zoom {
+@keyframes guitar-zoom {
     from {
         transform: scale(1);
     }
@@ -215,19 +215,26 @@ footer {
 }
 /* Exercises*/
 
-#photos {
+#video-lessons {
     clear:both;
     line-height: 0;
-    column-count: 4;
+    column-count: 1;
     column-gap: 0;
 }
-#photos > img {
-    width:100%;
+#video-lessons > iframe {
+    padding: 20px;
+}
+#video-lessons p {
+    text-align:left;
+    width: 300px;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
 }
 /* Media Queries */
 /*for larger to medium size screens, from 1200 wide and down*/
 @media screen and (max-width: 1200px) {
-    #club-ethos {
+    #club-limitless {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
@@ -269,7 +276,7 @@ hr {
 #cover-text {
     left:0;
 }
-#club-ethos {
+#club-limitless {
     height:600px;
     width:90%;
     margin: 0 auto;
@@ -285,12 +292,16 @@ hr {
     text-align: center;
     padding:0 20px;
 }
-#photos {
+#video-lessons {
     column-count: 3;
+
+}
+#video-lessons > p {
+    text-align:justify;
 }
 }
 @media screen and (max-width: 800px) {
-    #photos {
+    #video-lessons {
         column-count: 2;
     }
 }
