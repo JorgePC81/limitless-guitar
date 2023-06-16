@@ -163,16 +163,6 @@ hr {
     border-radius: 100%;
     margin-left: 75%;
 }
-#circle2-container {
-    width:800px;
-    height:400px;
-    padding:30px;
-    border-style: solid;
-    border-color: #ccc;
-    border-width: 1px;
-    border-radius: 100%;
-    margin: 0 auto;
-}
 #circle-cover-bg {
     background: url('../images/pexels-eduardo-dutra-1822503.jpg');
     border-radius:50%;
@@ -184,20 +174,33 @@ hr {
     margin:auto;
     text-align: center;
     }
-    #circle2-cover-bg {
-    background: url('../images/pexels-brett-sayles-1205062.jpg');
-    border-radius:50%;
-    opacity: unset;
-    width: 800px;
-    height:400px;
-    background-size:cover; /* or "contain" depending on what you want */
-    background-position:center center;
-    background-repeat: no-repeat;
-    text-align:center;
-    margin:auto;
-    padding:0;
-    }
     
+    /*Routine*/
+
+.title-secret-success {
+    font-size: x-large; 
+    padding: 30px; 
+    font-family: fantasy;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.title-secret-success:hover {
+/*animates effects*/
+animation-name: title-zoom;
+animation-duration: 3s;
+animation-fill-mode:forwards;
+}
+/*Create the zoom for the image on header*/
+@keyframes title-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
 /* photo whole stage */
 #routine {
     background-image: url('../images/pexels-thibault-trillet-167636.jpg');
@@ -240,6 +243,32 @@ footer {
     padding:5%;
     color:#3a3a3a;
 }
+
+/*Photo exersices*/
+
+#circle2-container {
+    width:1200px;
+    height:600px;
+    padding:30px;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 100%;
+    margin-left: 10%;
+}
+#circle2-cover-bg {
+    background: url('../images/pexels-brett-sayles-1205062.jpg');
+    border-radius:50%;
+    opacity: unset;
+    width: 1200;
+    height:600px;
+    background-size:cover; /* or "contain" depending on what you want */
+    background-position:center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    padding:0;
+    }
+
 /* Exercises*/
 
 #video-lessons {
