@@ -121,7 +121,7 @@ animation-fill-mode: forwards;
     height: 250px;
     padding-top: 25px;
     padding-left:10px;
-    background-color: rgba(66, 56, 149, 0.7);
+    background-color: rgba(189, 183, 243, 0.7);
     bottom:30px;
     right:150px;
     position:absolute;
@@ -400,3 +400,197 @@ hr {
         column-count: 1;
     }
 }
+
+/*styling Signup page*/
+
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    color: #3a3a3a;
+}
+
+/* headings and logo */
+
+h1, h2{
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+}
+
+#logo{
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+}
+
+/* navigation links */
+
+#menu{
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#logo, #menu{
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover{
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active{
+    border-bottom: 1px solid #3a3a3a;
+}
+/* Footer */
+
+footer{
+    height: 150px;
+}
+/* Gallery Photos */
+
+#photo {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0px;
+}
+
+#photo img{
+    width: 100%;
+}
+
+/* Form */
+
+.form-section {
+    background-image: url(/assets/images/pexels-gustavo-borges-2646825.jpg);
+    background-repeat: no-repeat;
+    width: 100%; 
+    height:900px;
+    clear: left;
+    background-size: cover;
+    background-position: center;
+    
+}
+.signup-form {
+    margin: 150px 10% 0 0;
+    color:#fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 400;
+    position:absolute;
+    left:10%;
+    padding: 30px;
+}
+.signup-form > h2 {
+    color:#fafafa;
+    margin-bottom: 20px;
+}
+.text-input {
+    background-color: white;
+    color:#fafafa;
+    width:100%;
+    height:25px;
+    margin: 5px 0 20px 0;
+    border: 1px soli #fafafa;
+    border-radius: 2px;
+}
+.text-input:hover {
+    border-color: #f16c6b;
+}
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: rgba(189, 183, 243, 0.7);
+    color: #fafafa;
+    display:block;
+    
+}
+.join-button:hover {
+    background-color: #fafafa;
+    color:#f16c6b;
+}
+/* Footer */
+footer {
+    height: 150px;
+}
+.social-networks {
+    text-align: center;   
+}
+.social-networks > li {
+    display:inline;
+    float:none;
+}
+.social-networks i {
+    font-size:160%;
+    margin:1%;
+    padding:5%;
+    color:#3a3a3a;
+}
+
+
+/* Media queries */
+
+/* For large to medium screens sizes from 1200px wide and down */
+@media screen and (max-width: 1200px){
+    #size{
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    hr {
+        display: none;
+    }
+}
+
+/* For medium screens sizes from 950px wide and down */
+@media screen and (max-width: 950px){
+
+    #menu{
+        clear: left;
+        float: left;
+        margin-left: 30px; 
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-text{
+        left:0;
+    }
+
+    #size{
+        width:90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    #photo{
+        column-count: 3;
+    }
+}
+
+/* For small screens sizes from 800px wide and down */
+@media screen and (max-width: 800px){
+    #photo{
+        column-count: 2;
+    }
+}
+
