@@ -358,6 +358,16 @@ hr {
     height:250px;
     padding:0;
 }
+#circle-cover-bg {
+    background: url('../images/pexels-eduardo-dutra-1822503.jpg');
+    border-radius:50%;
+    opacity: unset;
+    width: 600px;
+    height:800px;
+    justify-content: flex-start;
+
+    }
+    
 }
 /* For medium size 950 px down*/
 @media screen and (max-width: 950px) {
@@ -399,58 +409,19 @@ hr {
     #video-lessons {
         column-count: 1;
     }
+    #circle-cover-bg {
+        background: url('../images/pexels-eduardo-dutra-1822503.jpg');
+        border-radius:50%;
+        opacity: unset;
+        width: 600px;
+        height:800px;
+        justify-content: flex-start;
+    
+        }
+        
 }
 
 /*styling Signup page*/
-
-
-* {
-    margin:0;
-    padding:0;
-    border:0;
-}
-
-body{
-    font-family: Lato, sans-serif;
-    color: #3a3a3a;
-}
-
-/* headings and logo */
-
-h1, h2{
-    font-family: Oswald, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #252525;
-}
-
-#logo{
-    float: left;
-    font-size: 280%;
-    margin-left: 30px;
-}
-
-/* navigation links */
-
-#menu{
-    font-size: 110%;
-    letter-spacing: 4px;
-}
-
-#logo, #menu{
-    line-height: 75px;
-}
-
-#menu li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-}
-
-#menu a {
-    text-decoration: none;
-    color: inherit;
-}
 
 #menu a:hover{
     border-bottom: 1px solid #3a3a3a;
@@ -546,51 +517,3 @@ footer {
     padding:5%;
     color:#3a3a3a;
 }
-
-
-/* Media queries */
-
-/* For large to medium screens sizes from 1200px wide and down */
-@media screen and (max-width: 1200px){
-    #size{
-        width: 65%;
-        height: 1200px;
-        margin: 0 auto;
-    }
-    hr {
-        display: none;
-    }
-}
-
-/* For medium screens sizes from 950px wide and down */
-@media screen and (max-width: 950px){
-
-    #menu{
-        clear: left;
-        float: left;
-        margin-left: 30px; 
-        margin-bottom: 20px;
-        line-height: 25px;
-    }
-
-    #cover-text{
-        left:0;
-    }
-
-    #size{
-        width:90%;
-        height: 1200px;
-        margin: 0 auto;
-    }
-    #photo{
-        column-count: 3;
-    }
-}
-
-/* For small screens sizes from 800px wide and down */
-@media screen and (max-width: 800px){
-    #photo{
-        column-count: 2;
-    }
-}
-
