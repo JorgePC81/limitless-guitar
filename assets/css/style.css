@@ -89,6 +89,7 @@ letter-spacing: 5px;
     height: 600px;
     width: 100%;
     overflow: hidden;
+
     position:relative;
 
     /*zoom image*/
@@ -130,6 +131,16 @@ animation-fill-mode: forwards;
 #club-limitless {
     height:600px;
 }
+#club-limitless p {
+    font-size: x-large;
+    font-style:oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.club-limitless2 {
+    font-size: x-large;
+    font-style:oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 #left-about {
     padding: 30px;
     width:33%;
@@ -140,9 +151,36 @@ animation-fill-mode: forwards;
     width:33%;
     float: right;
 }
+
 #center-about {
-    padding:30px;
-    width:35%;
+    padding-top: 30px;
+    width:33%;
+    margin:0 auto;
+
+    }
+    
+    #circle-container {
+        width:600px;
+        height:800px;
+        padding:40px;
+        border-style: solid;
+        border-color: #ccc;
+        border-width: 1px;
+        border-radius:50%;
+        margin: 0 auto;
+    }
+    #circle-cover-bg {
+  background: url("../images/pexels-eduardo-dutra-1822503.jpg");
+  height:100%;
+  border-radius:50%;
+  width: 600px;
+  height:800;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
 }
 .left-about-heading {
     width: 60%;
@@ -174,30 +212,6 @@ hr {
     margin: 20px 0;
     font-size: 225%;
 }
-
-#circle-container {
-    width:600px;
-    height:800px;
-    padding:10px;
-    border-style: solid;
-    border-color: #ccc;
-    border-width: 1px;
-    border-radius: 100%;
-    margin-left: 75%;
-   justify-content: center;
-}
-#circle-cover-bg {
-    background: url('../images/pexels-eduardo-dutra-1822503.jpg');
-    border-radius:50%;
-    opacity: unset;
-    width: 600px;
-    height:800px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    margin:auto;
-   
-    }
-    
     /*Routine*/
 
 .title-secret-success {
@@ -271,33 +285,35 @@ footer {
 /*Photo exercises page*/
 
 #circle2-container {
-    width:1200px;
-    height:600px;
+    width: 1200px;;
+    height: 600px;;
     padding:30px;
     border-style: solid;
     border-color: #ccc;
     border-width: 1px;
-    border-radius: 100%;
-    margin-left: 10%;
+    border-radius:100%;
+    margin: 0 auto;
+    justify-content: center;
 }
+
 #circle2-cover-bg {
     background: url('../images/pexels-brett-sayles-1205062.jpg');
+    height:100%;
     border-radius:50%;
-    opacity: unset;
     width: 1200px;
-    height:600px;
-    background-size:cover; /* or "contain" depending on what you want */
-    background-position:center center;
+    height:600;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     text-align:center;
+    margin:auto;
     padding:0;
-    }
+  }
 
 /* video Exercises*/
 
 #video-lessons {
-    clear:both;
-    column-count: 1;
+    column-count: 4;
     column-gap: 0;
     height:110%;
     padding:15px;
@@ -308,7 +324,7 @@ footer {
  
 }
 #video-lessons > li {
-    padding: 20px;
+    padding: 10px;
     border-style: double;
 }
 #video-lessons p {
@@ -318,14 +334,14 @@ footer {
     font-size:x-large;
     font-style: oblique;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding:15px;
+    padding:5px;
 }
 #video-lessons h3 {
     font-style: oblique;
     font-size:x-large;
     font-style: oblique;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px 15px 30px 15px;
+    padding: 10px 10px 10px 10px;
 
 }
 /* Media Queries */
@@ -464,17 +480,6 @@ hr {
             margin-left: 75%;
            justify-content: left;
         }
-        #circle-cover-bg {
-            background: url('../images/pexels-eduardo-dutra-1822503.jpg');
-            border-radius:50%;
-            opacity: unset;
-            width: 600px;
-            height:800px;
-            background-size:cover;
-            background-repeat: no-repeat;
-            margin:auto;
-            justify-content: left;
-            }
         
 }
 
