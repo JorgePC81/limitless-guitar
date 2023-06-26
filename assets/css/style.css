@@ -213,7 +213,7 @@ hr {
     font-family: fantasy;
     font-weight: bold;
     font-style: oblique;
-    justify-content: center;
+   text-align: center;
 }
 
 .title-secret-success:hover {
@@ -236,7 +236,7 @@ animation-fill-mode:forwards;
 #routine {
     background-image: url('../images/pexels-thibault-trillet-167636.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     width: 100%;
     overflow: hidden;
@@ -350,6 +350,18 @@ footer {
     padding: 30px 0;
     margin: 0;
 }
+#video-lessons {
+    column-count: 2;
+    column-gap: 0;
+    height:110%;
+    width:fit-content;
+}
+#video-lessons > li {
+    padding: 10px;
+    border-style: double;
+    width: fit-content;
+    margin: 0 auto;
+}
 #left-about, #right-about {
     width:100%;
     float: left;
@@ -371,9 +383,8 @@ hr {
     width: 800px;
     height:600px;
     justify-content: flex-start;
-    background-size:cover;
-
-    }
+    background-size:contain;
+}
     #circle-container {
         width:800px;
         height:600px;
@@ -384,8 +395,16 @@ hr {
         border-radius: 100%;
         margin-left: 75%;
        justify-content: left;
-    }
+}
+#circle2-container {
+    height: 400px;
+    width: 800px;
+}
 
+#circle2-cover-bg {
+    height: 400px;
+    width: 800px;
+  }
 #routine div {
     color:#fafafa;
    font-size: 10px;
@@ -393,8 +412,17 @@ hr {
 #routine h2 {
     font-size: 6px;
 }
-    
+.title-secret-success {
+    justify-content: center;
+    padding-top: 320px;
 }
+.title-secret-success:hover {
+    /*animates effects*/
+    animation: none;
+    }
+
+}
+
 /* For medium size 950 px down*/
 @media screen and (max-width: 950px) {
     .menu {
@@ -412,6 +440,7 @@ hr {
     width:90%;
     margin: 0 auto;
 }
+
 .left-about-heading, .right-about-heading {
     width:inherit;
 }
@@ -446,11 +475,23 @@ hr {
     opacity: unset;
     width: 400px;
     height:200px;
-    background-size:cover;
+    background-size:contain;
     background-repeat: no-repeat;
-    
  
     }
+    .title-secret-success:hover {
+        /*animates effects*/
+        animation: none;
+        }
+        #circle2-container {
+            height: 200px;
+            width: 600px;
+        }
+        
+        #circle2-cover-bg {
+            height: 200px;
+            width: 600px;
+          }
 }
 @media screen and (max-width: 800px) {
     #video-lessons {
@@ -476,7 +517,19 @@ hr {
            justify-content: flex-start;
            
         }
-        
+        .title-secret-success:hover {
+            /*animates effects*/
+            animation: none;
+            }
+            #circle2-container {
+                height: 100px;
+                width: 300px;
+            }
+            
+            #circle2-cover-bg {
+                height: 100px;
+                width: 300px;
+              }
 }
 
 /*styling Signup page*/
