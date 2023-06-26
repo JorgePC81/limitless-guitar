@@ -151,13 +151,6 @@ animation-fill-mode: forwards;
     width:33%;
     float: right;
 }
-
-#center-about {
-    padding-top: 30px;
-    width:33%;
-    margin:0 auto;
-
-    }
     
     #circle-container {
         width:600px;
@@ -220,7 +213,7 @@ hr {
     font-family: fantasy;
     font-weight: bold;
     font-style: oblique;
-    text-align: center;
+    justify-content: center;
 }
 
 .title-secret-success:hover {
@@ -313,10 +306,11 @@ footer {
 /* video Exercises*/
 
 #video-lessons {
-    column-count: 4;
+    column-count:2;
     column-gap: 0;
     height:110%;
     padding:15px;
+    width: fit-content;
 }
 #video-lessons ul {
     border-style: dotted;
@@ -347,7 +341,7 @@ footer {
 /* Media Queries */
 /*for larger to medium size screens, from 1200 wide and down*/
 @media screen and (max-width: 1200px) {
-    #club-limitless {
+#club-limitless {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
@@ -357,12 +351,6 @@ footer {
     margin: 0;
 }
 #left-about, #right-about {
-    width:100%;
-    float: left;
-    padding:0;
-}
-#center-about  {
-    clear:both;
     width:100%;
     float: left;
     padding:0;
@@ -383,6 +371,7 @@ hr {
     width: 800px;
     height:600px;
     justify-content: flex-start;
+    background-size:cover;
 
     }
     #circle-container {
@@ -396,6 +385,14 @@ hr {
         margin-left: 75%;
        justify-content: left;
     }
+
+#routine div {
+    color:#fafafa;
+   font-size: 10px;
+}
+#routine h2 {
+    font-size: 6px;
+}
     
 }
 /* For medium size 950 px down*/
@@ -441,19 +438,18 @@ hr {
     border-color: #ccc;
     border-width: 1px;
     border-radius: 100%;
-    margin-left: 75%;
-   justify-content: left;
+   justify-content:flex-start;
 }
 #circle-cover-bg {
     background: url('../images/pexels-eduardo-dutra-1822503.jpg');
     border-radius:50%;
     opacity: unset;
-    width: 00px;
-    height:100px;
+    width: 400px;
+    height:200px;
     background-size:cover;
     background-repeat: no-repeat;
-    margin:auto;
-    justify-content: left;
+    
+ 
     }
 }
 @media screen and (max-width: 800px) {
@@ -466,19 +462,19 @@ hr {
         opacity: unset;
         width: 200px;
         height:100px;
-        justify-content: flex-start;
+      text-align: left;
+        background-size: contain;
     
         }
         #circle-container {
             width:200px;
             height:100px;
-            padding:10px;
             border-style: solid;
             border-color: #ccc;
             border-width: 1px;
             border-radius: 100%;
-            margin-left: 75%;
-           justify-content: left;
+           justify-content: flex-start;
+           
         }
         
 }
