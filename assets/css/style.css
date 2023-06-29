@@ -423,6 +423,7 @@ footer {
 .signup-form {
     margin: 150px 10% 0 0;
     color: #090303;
+    font-size:x-large;
     background-color: rgba(60, 60, 60, 0.6);
     max-width: 400px;
     position: absolute;
