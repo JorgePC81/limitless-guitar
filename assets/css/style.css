@@ -729,4 +729,17 @@ footer {
         font-size: 6px;
         padding-bottom: 10px;
     }
+    #video-lessons {
+    column-count: 1;
+    height: 110%;
+    padding: 5px;
+    width:fit-content;
+}
+#video-lessons p {
+
+    width: 350px;
+}
+#video-lessons iframe {
+    width: 350px;
+}
 }
