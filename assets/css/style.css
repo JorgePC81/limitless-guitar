@@ -682,6 +682,7 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
+
     #video-lessons {
         column-count: 1;
     }
@@ -692,13 +693,14 @@ footer {
         width: 100px;
         background-size: cover;
         padding-bottom: 10px;
+      
     }
 
     #circle-container {
         height: 300px;
         width: 100px;
         justify-content: flex-end;
-        margin-right:100px;
+        margin-right: 90px;
     }
         
 
@@ -720,9 +722,11 @@ footer {
     }
     #routine h3 {
         color: #fafafa;
-        font-size: 17px;
+        font-size: 14px;
+        
     }
     #routine h2 {
-        font-size: 7px;
+        font-size: 6px;
+        padding-bottom: 10px;
     }
 }
